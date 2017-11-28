@@ -120,6 +120,7 @@
     "pretty-error": "^1.2.0",
     "react": "0.14.8",
     "react-bootstrap": "^0.28.1",
+    "react-bootstrap-table": "^4.1.5",
     "react-dom": "0.14.8",
     "react-helmet": "^2.2.0",
     "react-inline-css": "^2.0.0",

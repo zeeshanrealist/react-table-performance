@@ -4,7 +4,6 @@ import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
     App,
     Chat,
-    Home,
     Widgets,
     About,
     Login,
@@ -12,6 +11,7 @@ import {
     Survey,
     NotFound,
     Pagination,
+    Posts
   } from 'containers';
 
 export default (store) => {
@@ -38,7 +38,7 @@ export default (store) => {
   return (
     <Route path="/" component={App}>
       { /* Home (main) route */ }
-      <IndexRoute component={Home}/>
+      <IndexRoute path= "dashboard" component={Posts}/>
 
       { /* Routes requiring login */ }
       <Route onEnter={requireLogin}>
